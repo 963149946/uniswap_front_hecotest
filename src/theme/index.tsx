@@ -74,8 +74,8 @@ export function colors(darkMode: boolean): Colors {
     secondary3: darkMode ? '#17000b26' : '#FDEAF1',
 
     // other
-    red1: '#FF6871',
-    red2: '#F82D3A',
+    red1: '#FF6871', // red1为Swap Anyway按钮的颜色
+    red2: '#F82D3A', // red2为当鼠标移动到Swap Anyway按钮时的高亮颜色
     green1: '#27AE60',
     yellow1: '#FFE270',
     yellow2: '#F3841E'
