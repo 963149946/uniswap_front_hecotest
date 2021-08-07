@@ -1,4 +1,4 @@
-import { ChainId } from 'sun_zhen_tao_swap-sdk'
+import { ChainId } from 'bdswap_hecotest-sdk'
 import React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Text } from 'rebass'
@@ -132,6 +132,7 @@ const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
   [ChainId.ROPSTEN]: 'Ropsten',
   [ChainId.GÖRLI]: 'Görli',
   [ChainId.KOVAN]: 'Kovan',
+  [ChainId.HECO_MAINNET]: '',
   [ChainId.HECO]: 'HECO'
  
 }
@@ -163,7 +164,7 @@ export default function Header() {
             <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
               {account && userEthBalance ? (
                 <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={500}>
-                  {userEthBalance?.toSignificant(4)} ETH
+                  {userEthBalance?.toSignificant(4)} HT
                 </BalanceText>
               ) : null}
               <Web3Status />
